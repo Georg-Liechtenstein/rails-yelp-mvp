@@ -1,5 +1,7 @@
 <h1>Restaurants</h1>
+<button>
 <p><%= link_to 'Add a new restaurant', new_restaurant_path%></p>
+</button>
 <ul>
 <% @restaurants.each do |restaurant| %>
 <p><%= link_to restaurant.name, restaurant_path(restaurant) %></p>
